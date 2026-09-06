@@ -1,0 +1,18 @@
+:root {
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --color-bg-primary: #f8fafc;
+  --color-bg-secondary: #f1f5f9;
+  --color-bg-tertiary: #e2e8f0;
+
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+
+  --color-border: #cbd5e1;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+}

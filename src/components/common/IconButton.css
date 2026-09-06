@@ -1,0 +1,120 @@
+/* ========================================
+   BASE ICON BUTTON
+======================================== */
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+
+  transition:
+    background-color var(--transition-normal),
+    border-color var(--transition-normal),
+    color var(--transition-normal),
+    transform var(--transition-fast),
+    box-shadow var(--transition-normal);
+}
+
+/* ========================================
+   SIZES
+======================================== */
+
+.icon-button--small {
+  width: 32px;
+  height: 32px;
+
+  font-size: var(--font-size-sm);
+}
+
+.icon-button--medium {
+  width: 40px;
+  height: 40px;
+
+  font-size: var(--font-size-md);
+}
+
+.icon-button--large {
+  width: 48px;
+  height: 48px;
+
+  font-size: var(--font-size-lg);
+}
+
+/* ========================================
+   DEFAULT VARIANT
+======================================== */
+
+.icon-button--default:hover:not(:disabled) {
+  color: var(--color-text-primary);
+
+  border-color: var(--color-primary);
+
+  background: var(--color-surface-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(124, 92, 255, 0.18);
+}
+
+/* ========================================
+   PRIMARY VARIANT
+======================================== */
+
+.icon-button--primary {
+  background: var(--color-primary);
+  color: #ffffff;
+
+  border-color: var(--color-primary);
+}
+
+.icon-button--primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 20px rgba(124, 92, 255, 0.35);
+}
+
+/* ========================================
+   GHOST VARIANT
+======================================== */
+
+.icon-button--ghost {
+  background: transparent;
+  border-color: transparent;
+}
+
+.icon-button--ghost:hover:not(:disabled) {
+  background: var(--color-surface);
+
+  color: var(--color-text-primary);
+
+  border-color: var(--color-border);
+}
+
+/* ========================================
+   ACTIVE STATE
+======================================== */
+
+.icon-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* ========================================
+   DISABLED STATE
+======================================== */
+
+.icon-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

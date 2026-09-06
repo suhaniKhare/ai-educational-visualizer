@@ -1,0 +1,127 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: var(--navbar-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 var(--space-6);
+
+  background: rgba(8, 11, 20, 0.82);
+
+  border-bottom: 1px solid var(--color-border);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* ========================================
+   BRAND
+======================================== */
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navbar__logo {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-primary);
+  color: #ffffff;
+
+  box-shadow:
+    0 0 20px rgba(124, 92, 255, 0.25);
+}
+
+.navbar__brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navbar__title {
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-md);
+  font-weight: 700;
+
+  letter-spacing: -0.01em;
+}
+
+.navbar__tagline {
+  color: var(--color-text-muted);
+
+  font-size: var(--font-size-xs);
+}
+
+/* ========================================
+   RIGHT SIDE
+======================================== */
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* ========================================
+   INTERACTIVE LEARNING BADGE
+======================================== */
+
+.navbar__ai-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  padding: 8px 12px;
+
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  border-radius: 999px;
+
+  background: rgba(34, 211, 238, 0.06);
+
+  color: var(--color-secondary);
+
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 var(--space-4);
+  }
+
+  .navbar__tagline {
+    display: none;
+  }
+
+  .navbar__ai-badge span {
+    display: none;
+  }
+
+  .navbar__ai-badge {
+    padding: 8px;
+  }
+}

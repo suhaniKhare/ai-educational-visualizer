@@ -1,0 +1,65 @@
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+
+  width: 100%;
+}
+
+/* ========================================
+   EYEBROW
+======================================== */
+
+.section-title__eyebrow {
+  color: var(--color-secondary);
+
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.section-title__heading {
+  color: var(--color-text-primary);
+
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+}
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+.section-title__subtitle {
+  max-width: 650px;
+
+  color: var(--color-text-secondary);
+
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+}
+
+/* ========================================
+   ALIGNMENT
+======================================== */
+
+.section-title--center {
+  align-items: center;
+  text-align: center;
+}
+
+.section-title--right {
+  align-items: flex-end;
+  text-align: right;
+}

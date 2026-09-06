@@ -1,0 +1,311 @@
+.bresenham-page {
+  padding: 55px;
+  color: #f8fafc;
+  min-height: 100%;
+}
+
+.bresenham-header {
+  max-width: 900px;
+  margin-bottom: 45px;
+}
+
+.bresenham-label {
+  color: #8b5cf6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bresenham-header h1 {
+  font-size: 52px;
+  margin: 12px 0;
+  font-weight: 800;
+}
+
+.bresenham-header p {
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Main layout */
+
+.bresenham-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+}
+
+/* Panels */
+
+.bresenham-panel,
+.bresenham-visualizer,
+.bresenham-explanation {
+  background: #111827;
+  border: 1px solid #263248;
+  border-radius: 18px;
+}
+
+.bresenham-panel {
+  padding: 25px;
+}
+
+.bresenham-panel h2,
+.bresenham-visualizer h2,
+.bresenham-explanation h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+/* Inputs */
+
+.bresenham-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.bresenham-input-grid label {
+  display: block;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.bresenham-input-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0b1120;
+  color: white;
+  outline: none;
+}
+
+.bresenham-input-grid input:focus {
+  border-color: #8b5cf6;
+}
+
+/* Information & Calculations */
+
+.bresenham-info {
+  margin-top: 22px;
+  padding: 15px;
+  background: #0b1120;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+}
+
+.bresenham-info p {
+  margin: 8px 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.bresenham-info strong {
+  color: #e2e8f0;
+}
+
+.bresenham-tag {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Current Calculation Card */
+
+.bresenham-current-calculation {
+  margin-top: 22px;
+  padding: 18px;
+  background: #0b1120;
+  border-radius: 12px;
+  border: 1px solid #3b0764;
+}
+
+.bresenham-current-calculation h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #a855f7;
+}
+
+.bresenham-current-calculation p {
+  margin: 6px 0;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.bresenham-highlight-text {
+  color: #f472b6;
+  font-weight: 700;
+}
+
+/* Buttons */
+
+.bresenham-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.bresenham-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #7c3aed;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bresenham-buttons button:hover {
+  background: #8b5cf6;
+}
+
+.bresenham-buttons button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.bresenham-buttons .reset-btn {
+  background: #1e293b;
+}
+
+.bresenham-buttons .reset-btn:hover {
+  background: #334155;
+}
+
+.bresenham-step {
+  text-align: center;
+  margin-top: 15px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* Visualizer */
+
+.bresenham-visualizer {
+  padding: 25px;
+}
+
+.bresenham-grid {
+  width: min(100%, 700px);
+  aspect-ratio: 15 / 10;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  border: 1px solid #334155;
+  background: #0b1120;
+}
+
+.bresenham-cell {
+  border-right: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  font-size: 25px;
+  transition: 0.2s;
+}
+
+.bresenham-cell.active {
+  background: #7c3aed;
+  color: white;
+  box-shadow: inset 0 0 15px rgba(139, 92, 246, 0.7);
+}
+
+.bresenham-cell.start {
+  background: #06b6d4;
+  color: white;
+}
+
+.bresenham-cell.end {
+  background: #f59e0b;
+  color: white;
+}
+
+.bresenham-cell.current {
+  outline: 2px solid #ec4899;
+  outline-offset: -2px;
+  animation: pulse-border 1s infinite alternate;
+}
+
+@keyframes pulse-border {
+  from {
+    box-shadow: inset 0 0 5px #ec4899;
+  }
+  to {
+    box-shadow: inset 0 0 18px #ec4899;
+  }
+}
+
+/* Legend */
+
+.bresenham-legend {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* Explanation */
+
+.bresenham-explanation {
+  margin-top: 28px;
+  padding: 28px;
+}
+
+.bresenham-formula {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.bresenham-formula p {
+  margin: 0;
+  padding: 16px;
+  background: #0b1120;
+  border-radius: 10px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .bresenham-page {
+    padding: 30px;
+  }
+
+  .bresenham-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bresenham-header h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bresenham-page {
+    padding: 20px;
+  }
+
+  .bresenham-header h1 {
+    font-size: 32px;
+  }
+
+  .bresenham-formula {
+    grid-template-columns: 1fr;
+  }
+
+  .bresenham-legend {
+    flex-direction: column;
+    align-items: center;
+  }
+}

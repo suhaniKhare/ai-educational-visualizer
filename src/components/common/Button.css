@@ -1,0 +1,116 @@
+/* ========================================
+   BASE BUTTON
+======================================== */
+
+.common-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+
+  font-weight: 600;
+  line-height: 1;
+
+  transition:
+    background-color var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-fast),
+    box-shadow var(--transition-normal);
+
+  user-select: none;
+}
+
+/* ========================================
+   SIZES
+======================================== */
+
+.common-button--small {
+  min-height: 34px;
+  padding: 0 var(--space-3);
+
+  font-size: var(--font-size-sm);
+}
+
+.common-button--medium {
+  min-height: 42px;
+  padding: 0 var(--space-5);
+
+  font-size: var(--font-size-md);
+}
+
+.common-button--large {
+  min-height: 50px;
+  padding: 0 var(--space-6);
+
+  font-size: var(--font-size-lg);
+}
+
+/* ========================================
+   PRIMARY
+======================================== */
+
+.common-button--primary {
+  background: var(--color-primary);
+  color: #ffffff;
+
+  box-shadow:
+    0 4px 16px rgba(124, 92, 255, 0.25);
+}
+
+.common-button--primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 24px rgba(124, 92, 255, 0.35);
+}
+
+.common-button--primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* ========================================
+   SECONDARY
+======================================== */
+
+.common-button--secondary {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-primary);
+
+  border-color: var(--color-border);
+}
+
+.common-button--secondary:hover:not(:disabled) {
+  background: var(--color-surface-hover);
+  border-color: var(--color-primary);
+
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   GHOST
+======================================== */
+
+.common-button--ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.common-button--ghost:hover:not(:disabled) {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+
+/* ========================================
+   DISABLED
+======================================== */
+
+.common-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
