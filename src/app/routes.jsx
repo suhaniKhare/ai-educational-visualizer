@@ -1,37 +1,37 @@
-import Home from "../pages/Home/Home";
-import DDAVisualizer from "../pages/Subject/ComputerGraphics/DDAVisualizer/DDAVisualizer";
-import BresenhamVisualizer from "../pages/Subject/ComputerGraphics/BresenhamVisualizer/BresenhamVisualizer";
-import TransformationsVisualizer from "../pages/Subject/ComputerGraphics/TransformationsVisualizer/TransformationsVisualizer";
-import SQLVisualizer from "../pages/Subject/DBMS/SQLVisualizer/SQLVisualizer";
-import NormalizationVisualizer from "../pages/Subject/DBMS/NormalizationVisualizer/NormalizationVisualizer";
-import IndexingVisualizer from "../pages/Subject/DBMS/IndexingVisualizer/IndexingVisualizer";
-import CPUSchedulingVisualizer from "../pages/Subject/OS/CPUSchedulingVisualizer/CPUSchedulingVisualizer";
-import PageReplacementVisualizer from "../pages/Subject/OS/PageReplacementVisualizer/PageReplacementVisualizer";
-import ProcessSynchronizationVisualizer from "../pages/Subject/OS/ProcessSynchronizationVisualizer/ProcessSynchronizationVisualizer";
-import Subject from "../pages/Subject/Subject";
 import computerGraphics from "../data/subjects/computerGraphics";
 import dbms from "../data/subjects/dbms";
 import operatingSystems from "../data/subjects/operatingSystems";
+import Home from "../pages/Home/Home";
+import BresenhamVisualizer from "../pages/Subject/ComputerGraphics/BresenhamVisualizer/BresenhamVisualizer";
+import DDAVisualizer from "../pages/Subject/ComputerGraphics/DDAVisualizer/DDAVisualizer";
+import TransformationsVisualizer from "../pages/Subject/ComputerGraphics/TransformationsVisualizer/TransformationsVisualizer";
+import IndexingVisualizer from "../pages/Subject/DBMS/IndexingVisualizer/IndexingVisualizer";
+import NormalizationVisualizer from "../pages/Subject/DBMS/NormalizationVisualizer/NormalizationVisualizer";
+import SQLVisualizer from "../pages/Subject/DBMS/SQLVisualizer/SQLVisualizer";
+import CPUSchedulingVisualizer from "../pages/Subject/OS/CPUSchedulingVisualizer/CPUSchedulingVisualizer";
+import PageReplacementVisualizer from "../pages/Subject/OS/PageReplacementVisualizer/PageReplacementVisualizer";
+import ProcessSynchronizationVisualizer from "../pages/Subject/OS/ProcessSynchronizationVisualizer/ProcessSynchronizationVisualizer";
+import Subject from "../pages/Subject/subject";
 
 import OSIModelVisualizer from "../pages/Subject/CN/OSIModelVisualizer/OSIModelVisualizer";
-import TCPHandshakeVisualizer from "../pages/Subject/CN/TCPHandshakeVisualizer/TCPHandshakeVisualizer";
 import SubnettingVisualizer from "../pages/Subject/CN/SubnettingVisualizer/SubnettingVisualizer";
+import TCPHandshakeVisualizer from "../pages/Subject/CN/TCPHandshakeVisualizer/TCPHandshakeVisualizer";
 
 import computerNetworks from "../data/subjects/computerNetworks";
 
+import IntermediateCodeVisualizer from "../pages/Subject/CompilerDesign/IntermediateCodeVisualizer/IntermediateCodeVisualizer";
 import LexicalAnalysisVisualizer from "../pages/Subject/CompilerDesign/LexicalAnalysisVisualizer/LexicalAnalysisVisualizer";
 import SyntaxAnalysisVisualizer from "../pages/Subject/CompilerDesign/SyntaxAnalysisVisualizer/SyntaxAnalysisVisualizer";
-import IntermediateCodeVisualizer from "../pages/Subject/CompilerDesign/IntermediateCodeVisualizer/IntermediateCodeVisualizer";
 
 import compilerDesign from "../data/subjects/compilerDesign";
 
 import ArrayVisualizer from "../pages/Subject/DSA/Data-Structures/ArrayVisualizer/ArrayVisualizer";
-import LinkedListVisualizer from "../pages/Subject/DSA/Data-Structures/LinkedListVisualizer/LinkedListVisualizer";
-import StackVisualizer from "../pages/Subject/DSA/Data-Structures/StackVisualizer/StackVisualizer";
-import QueueVisualizer from "../pages/Subject/DSA/Data-Structures/QueueVisualizer/QueueVisualizer";
-import TreeVisualizer from "../pages/Subject/DSA/Data-Structures/TreeVisualizer/TreeVisualizer";
-import GraphVisualizer from "../pages/Subject/DSA/Data-Structures/GraphVisualizer/GraphVisualizer";
 import DPVisualizer from "../pages/Subject/DSA/Data-Structures/DPVisualizer/DPVisualizer";
+import GraphVisualizer from "../pages/Subject/DSA/Data-Structures/GraphVisualizer/GraphVisualizer";
+import LinkedListVisualizer from "../pages/Subject/DSA/Data-Structures/LinkedListVisualizer/LinkedListVisualizer";
+import QueueVisualizer from "../pages/Subject/DSA/Data-Structures/QueueVisualizer/QueueVisualizer";
+import StackVisualizer from "../pages/Subject/DSA/Data-Structures/StackVisualizer/StackVisualizer";
+import TreeVisualizer from "../pages/Subject/DSA/Data-Structures/TreeVisualizer/TreeVisualizer";
 
 import dsa from "../data/subjects/dsa";
 
