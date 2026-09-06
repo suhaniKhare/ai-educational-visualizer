@@ -11,7 +11,7 @@ import SQLVisualizer from "../pages/Subject/DBMS/SQLVisualizer/SQLVisualizer";
 import CPUSchedulingVisualizer from "../pages/Subject/OS/CPUSchedulingVisualizer/CPUSchedulingVisualizer";
 import PageReplacementVisualizer from "../pages/Subject/OS/PageReplacementVisualizer/PageReplacementVisualizer";
 import ProcessSynchronizationVisualizer from "../pages/Subject/OS/ProcessSynchronizationVisualizer/ProcessSynchronizationVisualizer";
-import Subject from "../pages/Subject/subject";
+import Subject from "../pages/Subject/Subject";
 
 import OSIModelVisualizer from "../pages/Subject/CN/OSIModelVisualizer/OSIModelVisualizer";
 import SubnettingVisualizer from "../pages/Subject/CN/SubnettingVisualizer/SubnettingVisualizer";
