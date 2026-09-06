@@ -1,0 +1,395 @@
+.tcp-page {
+  min-height: 100vh;
+  padding: 55px;
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+.tcp-header {
+  max-width: 850px;
+  margin-bottom: 40px;
+}
+
+.tcp-label {
+  color: #8b5cf6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tcp-header h1 {
+  font-size: 52px;
+  margin: 10px 0;
+}
+
+.tcp-header h1 span {
+  color: #8b5cf6;
+}
+
+.tcp-header p {
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.tcp-layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 28px;
+}
+
+.tcp-panel,
+.tcp-explanation {
+  background: #111827;
+  border: 1px solid #263248;
+  border-radius: 18px;
+}
+
+.tcp-controls {
+  padding: 25px;
+}
+
+.tcp-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.tcp-title svg {
+  color: #8b5cf6;
+}
+
+.tcp-title h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.tcp-step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tcp-step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #263248;
+  background: #0f172a;
+  color: #cbd5e1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tcp-step.active {
+  background: #21183a;
+  border-color: #8b5cf6;
+}
+
+.tcp-step.completed {
+  border-color: #4c3b72;
+}
+
+.tcp-step-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: #1e293b;
+  color: #a78bfa;
+  font-weight: 700;
+}
+
+.tcp-step.active .tcp-step-number {
+  background: #8b5cf6;
+  color: white;
+}
+
+.tcp-step strong,
+.tcp-step small {
+  display: block;
+}
+
+.tcp-step small {
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.tcp-status-card {
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #263248;
+  background: #0f172a;
+  border-radius: 12px;
+}
+
+.tcp-status-card span,
+.tcp-visualizer-title span,
+.tcp-sequence-box span {
+  font-size: 11px;
+  color: #64748b;
+  letter-spacing: 1.5px;
+}
+
+.tcp-status-card strong {
+  display: block;
+  color: #c4b5fd;
+  margin: 7px 0;
+}
+
+.tcp-status-card p {
+  color: #94a3b8;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.tcp-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 15px;
+}
+
+.tcp-primary-btn,
+.tcp-next-btn,
+.tcp-reset-btn {
+  border-radius: 9px;
+  padding: 11px;
+  border: 1px solid #263248;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-weight: 600;
+}
+
+.tcp-primary-btn {
+  background: #8b5cf6;
+  color: white;
+  border-color: #8b5cf6;
+}
+
+.tcp-next-btn {
+  background: #1e293b;
+  color: #cbd5e1;
+}
+
+.tcp-reset-btn {
+  background: transparent;
+  color: #94a3b8;
+  grid-column: 1 / -1;
+}
+
+.tcp-visualizer {
+  padding: 28px;
+}
+
+.tcp-visualizer-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #263248;
+}
+
+.tcp-visualizer-title h2 {
+  margin: 7px 0 0;
+  font-size: 25px;
+}
+
+.tcp-connection-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tcp-connection-status span {
+  width: 8px;
+  height: 8px;
+  background: #fbbf24;
+  border-radius: 50%;
+}
+
+.tcp-connection-status.connected {
+  color: #34d399;
+}
+
+.tcp-connection-status.connected span {
+  background: #34d399;
+}
+
+.tcp-network {
+  min-height: 310px;
+  display: grid;
+  grid-template-columns: 120px 1fr 120px;
+  align-items: center;
+  gap: 30px;
+}
+
+.tcp-endpoint {
+  text-align: center;
+}
+
+.tcp-icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: #1b1530;
+  border: 1px solid #8b5cf6;
+  color: #a78bfa;
+}
+
+.tcp-endpoint strong {
+  display: block;
+  margin-top: 12px;
+}
+
+.tcp-endpoint small {
+  color: #64748b;
+}
+
+.tcp-channel {
+  position: relative;
+}
+
+.tcp-line {
+  height: 2px;
+  background: #263248;
+  width: 100%;
+}
+
+.tcp-packet {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 14px 0;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid #263248;
+  background: #0f172a;
+  color: #64748b;
+  opacity: 0.35;
+  transition: 0.3s;
+}
+
+.tcp-packet.visible {
+  opacity: 1;
+}
+
+.tcp-packet.current {
+  border-color: #8b5cf6;
+  color: #c4b5fd;
+  background: #21183a;
+}
+
+.tcp-channel-label {
+  text-align: center;
+  color: #475569;
+  font-size: 11px;
+  margin-top: 14px;
+}
+
+.tcp-sequence-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tcp-sequence-box div {
+  background: #0f172a;
+  border: 1px solid #263248;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.tcp-sequence-box strong {
+  display: block;
+  color: #c4b5fd;
+  margin-top: 7px;
+}
+
+.tcp-explanation {
+  margin-top: 28px;
+  padding: 28px;
+}
+
+.tcp-explanation h2 {
+  margin: 8px 0 22px;
+}
+
+.tcp-explanation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tcp-explanation-grid div {
+  padding: 18px;
+  background: #0f172a;
+  border: 1px solid #263248;
+  border-radius: 12px;
+}
+
+.tcp-explanation-grid strong {
+  color: #c4b5fd;
+}
+
+.tcp-explanation-grid p {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 950px) {
+  .tcp-page {
+    padding: 35px 25px;
+  }
+
+  .tcp-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tcp-network {
+    grid-template-columns: 90px 1fr 90px;
+  }
+
+  .tcp-explanation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .tcp-page {
+    padding: 25px 16px;
+  }
+
+  .tcp-header h1 {
+    font-size: 38px;
+  }
+
+  .tcp-network {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tcp-line {
+    display: none;
+  }
+
+  .tcp-sequence-box {
+    grid-template-columns: 1fr;
+  }
+}

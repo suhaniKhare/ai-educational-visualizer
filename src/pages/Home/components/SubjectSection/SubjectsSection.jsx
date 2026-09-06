@@ -29,7 +29,7 @@ const subjects = [
     icon: Database,
   },
   {
-    id: "data-structures",
+    id: "dsa",
     title: "Data Structures",
     description: "See how arrays, stacks, queues, trees, and graphs work.",
     icon: GitBranch,

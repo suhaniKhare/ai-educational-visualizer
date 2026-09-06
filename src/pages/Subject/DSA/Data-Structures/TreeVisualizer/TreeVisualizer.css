@@ -1,0 +1,275 @@
+.tree-page {
+  min-height: 100vh;
+}
+
+.tree-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 22px;
+  padding: 0 30px 30px;
+}
+
+.tree-control-panel {
+  height: fit-content;
+}
+
+.ds-select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 14px;
+  margin-bottom: 18px;
+  outline: none;
+}
+
+.ds-select:focus,
+.ds-input:focus {
+  border-color: #8b5cf6;
+}
+
+.primary-action {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #7c3aed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-action:hover {
+  background: #8b5cf6;
+  transform: translateY(-1px);
+}
+
+.tree-visual-panel {
+  min-width: 0;
+}
+
+.visualization-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.visualization-heading h2 {
+  margin: 5px 0 0;
+  color: #f9fafb;
+}
+
+.mini-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #9ca3af;
+}
+
+.bst-rule {
+  display: flex;
+  gap: 8px;
+}
+
+.bst-rule span {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #1f2937;
+  color: #c4b5fd;
+  font-size: 12px;
+}
+
+.tree-canvas {
+  min-height: 430px;
+  background: #0b1120;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 45px 35px;
+}
+
+.tree-node-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tree-node {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #312e81;
+  border: 2px solid #8b5cf6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 5px rgba(124, 58, 237, 0.08);
+  transition: 0.25s;
+}
+
+.highlight-tree-node {
+  background: #059669;
+  border-color: #34d399;
+  box-shadow: 0 0 18px rgba(52, 211, 153, 0.45);
+  transform: scale(1.1);
+}
+
+.tree-children {
+  display: flex;
+  gap: 70px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.tree-children::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 25%;
+  right: 25%;
+  height: 1px;
+  background: #4b5563;
+}
+
+.tree-child {
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tree-child::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  width: 1px;
+  height: 40px;
+  background: #4b5563;
+}
+
+.empty-child {
+  color: #4b5563;
+  padding-top: 15px;
+}
+
+.status-box {
+  margin-top: 18px;
+}
+
+.traversal-result {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #0b1120;
+  border: 1px solid #273244;
+}
+
+.traversal-result > span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.result-values {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.result-node {
+  background: #312e81;
+  color: #ddd6fe;
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.result-arrow {
+  color: #6b7280;
+}
+
+.concept-card {
+  margin-top: 20px;
+}
+
+.tree-complexity {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.tree-complexity div {
+  flex: 1;
+  background: #111827;
+  border: 1px solid #273244;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tree-complexity span {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.tree-complexity strong {
+  color: #c4b5fd;
+}
+
+.concept-card small {
+  display: block;
+  margin-top: 12px;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .tree-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-control-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tree-layout {
+    padding: 0 15px 20px;
+  }
+
+  .tree-canvas {
+    padding: 35px 15px;
+  }
+
+  .tree-children {
+    gap: 25px;
+  }
+
+  .visualization-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tree-complexity {
+    flex-direction: column;
+  }
+}
